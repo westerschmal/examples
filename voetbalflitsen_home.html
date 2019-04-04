@@ -1,134 +1,9 @@
 <head>
 
+<!-- CMP: Place above all other ad serving scripts in head -->
 <script>
-	var window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	var ad_breakpoint_mobile = 768;
-	var ad_breakpoint_medium = 1008;
-</script>
-
-<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-
-<script>
-	var googletag = googletag || {};
-	googletag.cmd = googletag.cmd || [];
-</script>
-
-<script>
-googletag.cmd.push(function() {
-    if (window_width < ad_breakpoint_mobile) {
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[320, 250], [300, 250], [320, 240]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
-    } else {
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/sponsorship_banner', [728, 90], 'div-gpt-ad-1524656754679-3').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[970, 250], [728, 90]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
-    }
-    if (window_width > ad_breakpoint_medium) {
-        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_skyscraper', [[120, 600], [160, 600]], 'div-gpt-ad-1524656754679-8').addService(googletag.pubads());
-    }
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs(true);
-    googletag.enableServices();
-});
-
-</script>
-
-</head>
-
-<body>
-
-	<div id="div-gpt-bla"></div>
-	
-
-	<!-- ...more divs in body, no need to change them... -->
-
-
-
-
-
-
-
-    <!-- Quantcast Choice. Consent Manager Tag -->
-<script type="text/javascript" async=true>
-  var elem = document.createElement('script');
-  elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
-  elem.async = true;
-  elem.type = "text/javascript";
-  var scpt = document.getElementsByTagName('script')[0];
-  scpt.parentNode.insertBefore(elem, scpt);
-  (function() {
-  var gdprAppliesGlobally = true;
-  function addFrame() {
-      if (!window.frames['__cmpLocator']) {
-      if (document.body) {
-          var body = document.body,
-              iframe = document.createElement('iframe');
-          iframe.style = 'display:none';
-          iframe.name = '__cmpLocator';
-          body.appendChild(iframe);
-      } else {
-          // In the case where this stub is located in the head,
-          // this allows us to inject the iframe more quickly than
-          // relying on DOMContentLoaded or other events.
-          setTimeout(addFrame, 5);
-      }
-      }
-  }
-  addFrame();
-  function cmpMsgHandler(event) {
-      var msgIsString = typeof event.data === "string";
-      var json;
-      if(msgIsString) {
-      json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
-      } else {
-      json = event.data;
-      }
-      if (json.__cmpCall) {
-      var i = json.__cmpCall;
-      window.__cmp(i.command, i.parameter, function(retValue, success) {
-          var returnMsg = {"__cmpReturn": {
-          "returnValue": retValue,
-          "success": success,
-          "callId": i.callId
-          }};
-          event.source.postMessage(msgIsString ?
-          JSON.stringify(returnMsg) : returnMsg, '*');
-      });
-      }
-  }
-  window.__cmp = function (c) {
-      var b = arguments;
-      if (!b.length) {
-      return __cmp.a;
-      }
-      else if (b[0] === 'ping') {
-      b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
-          "cmpLoaded": false}, true);
-      } else if (c == '__cmp')
-      return false;
-      else {
-      if (typeof __cmp.a === 'undefined') {
-          __cmp.a = [];
-      }
-      __cmp.a.push([].slice.apply(b));
-      }
-  }
-  window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
-  window.__cmp.msgHandler = cmpMsgHandler;
-  if (window.addEventListener) {
-      window.addEventListener('message', cmpMsgHandler, false);
-  }
-  else {
-      window.attachEvent('onmessage', cmpMsgHandler);
-  }
-  })();
-  window.__cmp('init', {
+	var elem=document.createElement("script");elem.src="https://quantcast.mgr.consensu.org/cmp.js",elem.async=!0,elem.type="text/javascript";var scpt=document.getElementsByTagName("script")[0];scpt.parentNode.insertBefore(elem,scpt),function(){function e(n){var e,c="string"==typeof n.data;if((e=c?-1!=n.data.indexOf("__cmpCall")?JSON.parse(n.data):{}:n.data).__cmpCall){var p=e.__cmpCall;window.__cmp(p.command,p.parameter,function(e,a){var t={__cmpReturn:{returnValue:e,success:a,callId:p.callId}};n.source.postMessage(c?JSON.stringify(t):t,"*")})}}!function e(){if(!window.frames.__cmpLocator)if(document.body){var a=document.body,t=document.createElement("iframe");t.style="display:none",t.name="__cmpLocator",a.appendChild(t)}else setTimeout(e,5)}(),window.__cmp=function(e){var a=arguments;if(!a.length)return __cmp.a;if("ping"===a[0])a[2]({gdprAppliesGlobally:!0,cmpLoaded:!1},!0);else{if("__cmp"==e)return!1;void 0===__cmp.a&&(__cmp.a=[]),__cmp.a.push([].slice.apply(a))}},window.__cmp.gdprAppliesGlobally=!0,window.__cmp.msgHandler=e,window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onmessage",e)}();
+	  window.__cmp('init', {
   		'Language': 'nl',
 	'Initial Screen Title Text': 'We respecteren uw privacy',
 	'Initial Screen Reject Button Text': 'Ik accepteer niet',
@@ -162,6 +37,8 @@ googletag.cmd.push(function() {
   });
 </script>
 <!-- End Quantcast Choice. Consent Manager Tag -->
+
+<!-- CMP Styling -->
 <style>
     .qc-cmp-button {
       background-color: #fcc300 !important;
@@ -226,5 +103,96 @@ googletag.cmd.push(function() {
 			border: none !important;
 		}
 </style>
+<!-- End CMP Styling -->
+
+
+<script>
+	var window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var ad_breakpoint_mobile = 768;
+	var ad_breakpoint_medium = 1008;
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+<script>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	googletag.cmd.push(function() {
+    //Stop google from fetching ads initially. (waiting for consent)
+    googletag.pubads().disableInitialLoad();
+});
+
+</script>
+
+<script>
+googletag.cmd.push(function() {
+    if (window_width < ad_breakpoint_mobile) {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[320, 250], [300, 250], [320, 240]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
+    } else {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/sponsorship_banner', [728, 90], 'div-gpt-ad-1524656754679-3').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[970, 250], [728, 90]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
+    }
+    if (window_width > ad_breakpoint_medium) {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_skyscraper', [[120, 600], [160, 600]], 'div-gpt-ad-1524656754679-8').addService(googletag.pubads());
+    }
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs(true);
+    //enable lazy loading
+    googletag.pubads().enableLazyLoad({
+		fetchMarginPercent: 100,  
+		renderMarginPercent: 25,
+ 		mobileScaling: 2.0
+	});
+    googletag.enableServices();
+});
+</script>
+
+<!-- CMP CONSENT LOGIC -->
+<script>
+var consentForAds,cmpResponse={};function processCmpConsent(){if(cmpResponse.getConsentData&&cmpResponse.getConsentData.consentData){var e=cmpResponse.getVendorConsents.purposeConsents[1]&&cmpResponse.getVendorConsents.purposeConsents[2]&&cmpResponse.getVendorConsents.purposeConsents[3]&&cmpResponse.getVendorConsents.purposeConsents[4]&&cmpResponse.getVendorConsents.purposeConsents[5];consentForAds!==e&&(consentForAds=e,googletag.cmd.push(function(){googletag.pubads().setTargeting("iab_string",[cmpResponse.getConsentData.consentData]),googletag.pubads().setTargeting("consent",[consentForAds?1:0]),googletag.pubads().setRequestNonPersonalizedAds(consentForAds?0:1),googletag.pubads().refresh();try{loadSeedtagq()}catch(e){}}))}}function handleCmpResponseCallbacks(){function n(){cmpResponse.getConsentData&&cmpResponse.getVendorConsents&&processCmpConsent()}return{consentDataCallback:function(e){cmpResponse.getConsentData=e,n()},vendorConsentsCallback:function(e){cmpResponse.getVendorConsents=e,n()}}}var callbackHandler=handleCmpResponseCallbacks();window.__cmp("getConsentData",null,callbackHandler.consentDataCallback),window.__cmp("getVendorConsents",null,callbackHandler.vendorConsentsCallback);
+</script>
+<!-- END CMP CONSENT LOGIC -->
+
+
+
+<!-- If Seedtagq should be on this page, place in function loadSeedtagq(), so we can load it based on user consent, as follows: -->
+
+<!-- 
+<script>
+	window._seedtagq = window._seedtagq || [];
+	window._seedtagq.push(['_setId', '1140-2501-01']);
+	window._seedtagq.push(['iframe_mode']);
+
+	var loadSeedtagq = () => {
+	    var st = document.createElement('script');
+	    st.type = 'text/javascript';
+	    st.async = true;
+	    st.src = ('https:' == document.location.protocol ?
+	        'https' :
+	        'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(st, s);
+	};
+</script> 
+-->
+
+
+</head>
+
+<body>
+
+	<div id="div-gpt-bla"></div>
+	
+
+	<!-- ...more divs in body, no need to change them... -->
+
 
 </body>

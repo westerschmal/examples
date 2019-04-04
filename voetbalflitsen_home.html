@@ -1,0 +1,230 @@
+<head>
+
+<script>
+	var window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var ad_breakpoint_mobile = 768;
+	var ad_breakpoint_medium = 1008;
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+<script>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+googletag.cmd.push(function() {
+    if (window_width < ad_breakpoint_mobile) {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[320, 250], [300, 250], [320, 240]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
+    } else {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/bottom_mpu', [[320, 240], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-0').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/mobile_interstitial', [320, 480], 'div-gpt-ad-1524656754679-2').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/sponsorship_banner', [728, 90], 'div-gpt-ad-1524656754679-3').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_banner', [[970, 250], [728, 90]], 'div-gpt-ad-1524656754679-5').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_mpu', [[320, 240], [300, 600], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-6').addService(googletag.pubads());
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/Top_MPU_HeadlineView', [[320, 240], [320, 50], [320, 250], [300, 250]], 'div-gpt-ad-1524656754679-7').addService(googletag.pubads());
+    }
+    if (window_width > ad_breakpoint_medium) {
+        googletag.defineSlot('/67970281/display_thirdparty_nl/wielerflits_responsive/homepage/top_skyscraper', [[120, 600], [160, 600]], 'div-gpt-ad-1524656754679-8').addService(googletag.pubads());
+    }
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs(true);
+    googletag.enableServices();
+});
+
+</script>
+
+</head>
+
+<body>
+
+	<div id="div-gpt-bla"></div>
+	
+
+	<!-- ...more divs in body, no need to change them... -->
+
+
+
+
+
+
+
+    <!-- Quantcast Choice. Consent Manager Tag -->
+<script type="text/javascript" async=true>
+  var elem = document.createElement('script');
+  elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+  elem.async = true;
+  elem.type = "text/javascript";
+  var scpt = document.getElementsByTagName('script')[0];
+  scpt.parentNode.insertBefore(elem, scpt);
+  (function() {
+  var gdprAppliesGlobally = true;
+  function addFrame() {
+      if (!window.frames['__cmpLocator']) {
+      if (document.body) {
+          var body = document.body,
+              iframe = document.createElement('iframe');
+          iframe.style = 'display:none';
+          iframe.name = '__cmpLocator';
+          body.appendChild(iframe);
+      } else {
+          // In the case where this stub is located in the head,
+          // this allows us to inject the iframe more quickly than
+          // relying on DOMContentLoaded or other events.
+          setTimeout(addFrame, 5);
+      }
+      }
+  }
+  addFrame();
+  function cmpMsgHandler(event) {
+      var msgIsString = typeof event.data === "string";
+      var json;
+      if(msgIsString) {
+      json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+      } else {
+      json = event.data;
+      }
+      if (json.__cmpCall) {
+      var i = json.__cmpCall;
+      window.__cmp(i.command, i.parameter, function(retValue, success) {
+          var returnMsg = {"__cmpReturn": {
+          "returnValue": retValue,
+          "success": success,
+          "callId": i.callId
+          }};
+          event.source.postMessage(msgIsString ?
+          JSON.stringify(returnMsg) : returnMsg, '*');
+      });
+      }
+  }
+  window.__cmp = function (c) {
+      var b = arguments;
+      if (!b.length) {
+      return __cmp.a;
+      }
+      else if (b[0] === 'ping') {
+      b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
+          "cmpLoaded": false}, true);
+      } else if (c == '__cmp')
+      return false;
+      else {
+      if (typeof __cmp.a === 'undefined') {
+          __cmp.a = [];
+      }
+      __cmp.a.push([].slice.apply(b));
+      }
+  }
+  window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+  window.__cmp.msgHandler = cmpMsgHandler;
+  if (window.addEventListener) {
+      window.addEventListener('message', cmpMsgHandler, false);
+  }
+  else {
+      window.attachEvent('onmessage', cmpMsgHandler);
+  }
+  })();
+  window.__cmp('init', {
+  		'Language': 'nl',
+	'Initial Screen Title Text': 'We respecteren uw privacy',
+	'Initial Screen Reject Button Text': 'Ik accepteer niet',
+	'Initial Screen Accept Button Text': 'Ik accepteer',
+	'Initial Screen Purpose Link Text': 'Meer informatie',
+	'Purpose Screen Title Text': 'Wij respecteren uw privacy',
+	'Purpose Screen Header Title Text': 'Privacy instellingen',
+	'Purpose Screen Body Text': 'U kunt uw toestemmingsvoorkeuren instellen en aangeven hoe u wilt dat uw gegevens worden gebruikt voor de onderstaande doeleinden. U kunt uw voorkeuren voor ons onafhankelijk van die externe partners instellen. Elk doel heeft een beschrijving zodat u weet hoe wij en partners uw gegevens gebruiken.',
+	'Purpose Screen Enable All Button Text': 'Alles toestaan',
+	'Purpose Screen Vendor Link Text': 'Zie volledige partnerlijst',
+	'Purpose Screen Cancel Button Text': 'Annuleer',
+	'Purpose Screen Save and Exit Button Text': 'Opslaan en afsluiten',
+	'Vendor Screen Title Text': 'We respecteren uw privacy',
+	'Vendor Screen Body Text': 'U kunt hieronder toestemming geven afzonderlijk voor elke externe partner . Breid uw bedrijfslijst uit om te zien welke mogelijkheden u gebruikt om uw keuzes te maken. In sommige gevallen kunnen bedrijven aangeven dat ze uw gegevens gebruiken zonder uw toestemming, op basis van hun legitieme belangen. U kunt op hun privacybeleid klikken voor meer informatie en om u af te melden.',
+	'Vendor Screen Accept All Button Text': 'Accepteer alles',
+	'Vendor Screen Reject All Button Text': 'Alles afwijzen',
+	'Vendor Screen Purposes Link Text': 'Terug naar doeleinden',
+	'Vendor Screen Cancel Button Text': 'Annuleer',
+	'Vendor Screen Save and Exit Button Text': 'Opslaan en afsluiten',
+	'Initial Screen Body Text': 'Wij en onze partners gebruiken technologie op onze site, zoals cookies om inhoud en advertenties te personaliseren, social media functies te bieden en ons websiteverkeer te analyseren. Klik hieronder om akkoord te gaan met het gebruik van deze technologie op het internet. U kunt op elk moment van gedachten veranderen en uw instemmingskeuzes wijzigen door terug te keren naar deze site.',
+	'Initial Screen Body Text Option': 1,
+	'Publisher Name': 'Wielerflits',
+	'Publisher Logo': 'https://www.wielerflits.nl/wp-content/themes/WF2018/assets/img/website18/WF_logo.png',
+	/*'Display Persistent Consent Link': false,*/
+	'Min Days Between UI Displays': 365,
+	'Publisher Purpose IDs': [1,2,3,5],
+	'Consent Scope': 'service',
+	/*'No Option': false,*/
+	'Default Value for Toggles':'on',
+	/*'Display UI': 'inEU',*/
+  });
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag -->
+<style>
+    .qc-cmp-button {
+      background-color: #fcc300 !important;
+      border-color: #fcc300 !important;
+    }
+    .qc-cmp-button:hover {
+      background-color: transparent !important;
+      border-color: #fcc300 !important;
+    }
+    .qc-cmp-alt-action,
+    .qc-cmp-link {
+      color: #fcc300 !important;
+    }
+    .qc-cmp-button {
+      color: #000000 !important;
+    }
+    .qc-cmp-button.qc-cmp-secondary-button {
+      color: #555555 !important;
+    }
+    .qc-cmp-button.qc-cmp-button.qc-cmp-secondary-button:hover {
+      color:#ffffff !important;
+    }
+    .qc-cmp-button.qc-cmp-secondary-button {
+      border-color: #555555 !important;
+      background-color: transparent !important;
+    }
+    .qc-cmp-button.qc-cmp-secondary-button:hover {
+      background-color: #555555 !important;
+    }
+    .qc-cmp-ui,
+    .qc-cmp-ui .qc-cmp-main-messaging,
+    .qc-cmp-ui .qc-cmp-messaging,
+    .qc-cmp-ui .qc-cmp-beta-messaging,
+    .qc-cmp-ui .qc-cmp-title,
+    .qc-cmp-ui .qc-cmp-sub-title,
+    .qc-cmp-ui .qc-cmp-purpose-info,
+    .qc-cmp-ui .qc-cmp-table,
+    .qc-cmp-ui .qc-cmp-table-header,
+    .qc-cmp-ui .qc-cmp-vendor-list,
+    .qc-cmp-ui .qc-cmp-vendor-list-title {
+        color: #333333 !important;
+    }
+    .qc-cmp-ui a,
+    .qc-cmp-ui .qc-cmp-alt-action {
+      color: #000000 !important;
+    }
+    .qc-cmp-ui {
+        background-color: #ffffff !important;
+    }
+    .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+      background-color: #fafafa !important;
+    }
+    .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+      background-color: #ffffff !important;
+    }
+    .qc-cmp-small-toggle.qc-cmp-toggle-on,
+    .qc-cmp-toggle.qc-cmp-toggle-on {
+        background-color: #0587c3 !important;
+        border-color: #0587c3 !important;
+    }
+		.qc-cmp-toggle {
+			border: none !important;
+		}
+</style>
+
+</body>
